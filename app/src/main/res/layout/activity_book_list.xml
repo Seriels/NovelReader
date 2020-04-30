@@ -22,12 +22,12 @@
 			android:orientation="horizontal"
 			android:background="@color/nb.theme.background">
 			
-			<android.support.v7.widget.RecyclerView
+			<androidx.recyclerview.widget.RecyclerView
 				android:id="@+id/book_list_rv_tag_horizon"
 				android:layout_width="0dp"
 				android:layout_height="match_parent"
 				android:layout_weight="1">
-			</android.support.v7.widget.RecyclerView>
+			</androidx.recyclerview.widget.RecyclerView>
 			
 			<CheckBox
 				android:id="@+id/book_list_cb_filter"
@@ -49,13 +49,13 @@
 			android:layout_width="match_parent"
 			android:layout_height="match_parent">
 			
-			<android.support.v4.view.ViewPager
+			<androidx.viewpager.widget.ViewPager
 				android:id="@+id/tab_vp"
 				android:layout_width="match_parent"
 				android:layout_height="match_parent">
-			</android.support.v4.view.ViewPager>
+			</androidx.viewpager.widget.ViewPager>
 			
-			<android.support.v7.widget.RecyclerView
+			<androidx.recyclerview.widget.RecyclerView
 				android:id="@+id/book_list_rv_tag_filter"
 				android:layout_width="match_parent"
 				android:layout_height="match_parent"
@@ -63,7 +63,7 @@
 				android:background="@color/common_gray"
 				android:paddingLeft="10dp"
 				android:paddingRight="10dp">
-			</android.support.v7.widget.RecyclerView>
+			</androidx.recyclerview.widget.RecyclerView>
 		</FrameLayout>
 	</LinearLayout>
 </android.support.design.widget.CoordinatorLayout>

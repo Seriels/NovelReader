@@ -13,7 +13,7 @@ import android.graphics.PointF;
 import android.graphics.PorterDuff;
 import android.graphics.Region;
 import android.graphics.drawable.GradientDrawable;
-import android.support.v4.content.ContextCompat;
+import androidx.core.content.ContextCompat;
 import android.util.Log;
 import android.view.View;
 import android.widget.Scroller;

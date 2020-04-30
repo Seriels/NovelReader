@@ -2,8 +2,9 @@ package com.example.newbiechen.ireader.widget;
 
 import android.content.Context;
 import android.content.res.TypedArray;
-import android.support.annotation.Nullable;
-import android.support.v4.content.ContextCompat;
+import androidx.annotation.Nullable;
+import androidx.appcompat.widget.AppCompatTextView;
+import androidx.core.content.ContextCompat;
 import android.text.Spannable;
 import android.text.SpannableString;
 import android.text.SpannableStringBuilder;
@@ -28,7 +29,7 @@ import com.example.newbiechen.ireader.R;
  * 4. 添加点击事件
  */
 
-public class BookTextView extends android.support.v7.widget.AppCompatTextView{
+public class BookTextView extends AppCompatTextView {
 
     private OnBookClickListener mBookListener;
 

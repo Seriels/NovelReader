@@ -1,6 +1,7 @@
 package com.example.newbiechen.ireader.utils;
 
-import android.support.annotation.StringDef;
+import androidx.annotation.StringDef;
+
 
 import java.io.File;
 import java.lang.annotation.Retention;

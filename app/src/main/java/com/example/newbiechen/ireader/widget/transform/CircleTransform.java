@@ -6,10 +6,13 @@ import android.graphics.Canvas;
 import android.graphics.Paint;
 import android.graphics.PorterDuff;
 import android.graphics.PorterDuffXfermode;
-import android.util.Log;
+
+import androidx.annotation.NonNull;
 
 import com.bumptech.glide.load.engine.bitmap_recycle.BitmapPool;
 import com.bumptech.glide.load.resource.bitmap.BitmapTransformation;
+
+import java.security.MessageDigest;
 
 /**
  * Created by newbiechen on 17-4-28.
@@ -18,8 +21,11 @@ import com.bumptech.glide.load.resource.bitmap.BitmapTransformation;
 public class CircleTransform extends BitmapTransformation {
     private static final String TAG = "CircleTransform";
     public CircleTransform(Context context) {
-        super(context);
+        super();
     }
+    private static final String ID = "com.example.newbiechen.ireader.widget.transform.CircleTransform";
+    private static final byte[] ID_BYTES = ID.getBytes(CHARSET);
+
 
     /**
      *
@@ -55,8 +61,21 @@ public class CircleTransform extends BitmapTransformation {
         return result;
     }
 
+
+
     @Override
-    public String getId() {
-        return getClass().getName();
+    public boolean equals(Object o) {
+        return o instanceof CircleTransform;
     }
+
+    @Override
+    public int hashCode() {
+        return TAG.hashCode();
+    }
+
+    @Override
+    public void updateDiskCacheKey(@NonNull MessageDigest messageDigest) {
+        messageDigest.update(ID_BYTES);
+    }
+
 }

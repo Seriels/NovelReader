@@ -5,16 +5,16 @@
 		android:layout_width="match_parent"
 		android:layout_height="wrap_content">
 		
-		<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+		<androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
 			android:id="@+id/toolbar"
 			android:layout_width="match_parent"
 			android:layout_height="?attr/actionBarSize"
 			android:background="@color/colorPrimary"
 			android:theme="@style/Theme.ToolBar.Menu"
 			app:layout_scrollFlags="scroll|enterAlways">
-		</android.support.v7.widget.Toolbar>
+		</androidx.appcompat.widget.Toolbar>
 		
-		<android.support.design.widget.TabLayout
+		<com.google.android.material.tabs.TabLayout
 			android:id="@+id/tab_tl_indicator"
 			android:layout_width="match_parent"
 			android:layout_height="40dp"
@@ -22,6 +22,6 @@
 			app:tabTextColor="@color/translucent_text"
 			app:tabSelectedTextColor="@color/white"
 			app:tabIndicatorColor="@color/white">
-		</android.support.design.widget.TabLayout>
+		</com.google.android.material.tabs.TabLayout>
 	</android.support.design.widget.AppBarLayout>
 </merge>
